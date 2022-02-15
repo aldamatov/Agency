@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  padding: 20px 20px;
+}
+#showcase {
+  height: 500px;
+  color: rgb(0, 0, 0);
+}
+h1,
+h2 {
+  line-height: 50px;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.bg-img {
+  position: absolute;
+  z-index: -2;
+  background: url("https://images.pexels.com/photos/10816120/pexels-photo-10816120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  opacity: 0.7;
+}
+#showcase a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 30px;
+}
+#showcase a:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(37, 35, 35);
+  border: 1px solid red;
+}
+.section1 {
+  background-color: rgb(228, 226, 226);
+}
+#section2 {
+  background-color: rgb(37, 35, 35);
+}
+.section2 .box {
+  background-color: white;
+  margin: 15px 0;
+}
+.section4 {
+  color: white;
+}
+.section4 .blue-box {
+  background-color: #2690d4;
+}
+.section4 .grey-box {
+  background-color: #333;
+}
+footer {
+  color: white;
+  background-color: black;
+  padding: 30px 0;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  text-decoration: none;
+  color: #2690d4;
+}
+
+@media (min-width: 768px) {
+  #showcase .content {
+    padding-top: 180px;
+  }
+  #showcase a {
+    margin-top: 50px;
+  }
+  .section1 p {
+    columns: 2;
+    column-gap: 60px;
+  }
+
+  #section2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  #section2 .box {
+    margin: 20px 15px;
+  }
+  .section4 {
+    display: flex;
+  }
+  .section4 .content {
+    flex: 1;
+  }
+  footer {
+    padding: 10px 10px;
+    display: flex;
+  }
+  footer p {
+    flex: 1;
+  }
+} ;
